@@ -1,0 +1,49 @@
+console.log('Hello world');
+function write(message) {
+    document.getElementById("message").innerHTML += message + '<br/>';
+}
+var streetNumber = 5;
+var flatNumber = 106;
+var streetName = "Gajkowicza";
+console.log("Moj adres to " + streetName + "  " + streetNumber + "/" + flatNumber);
+//console.log(typeof streetName + "  Ulica");
+//console.log(typeof streetNumber + "  numer");
+
+function dodawanie(first, second) {
+    a = first;
+    b = second;
+    return a + second;
+}
+console.log("1+2=" + dodawanie(1, 2));
+console.log("a=" + a);
+console.log("b=" + b);
+
+console.log("54+22=" + dodawanie(54, 22));
+console.log("a=" + a);
+console.log("b=" + b);
+
+var notAssigned;
+//console.log(notAssigned);
+if (!notAssigned) {
+    console.log(notAssigned);
+}
+var person = {
+    name: "Franek",
+    age: "49"
+};
+console.log(person.name + " wiek " + person.age);
+
+//var promien = 4;
+function obwodKola(promien){
+    return 2 * promien * Math.PI;
+}
+function poleKola(promien){
+    return (Math.pow(promien,2) * Math.PI) ;
+}
+console.log("obwod kola o promieniu wynosi " + obwodKola(4).toFixed(3) + "cm");
+console.log("pole kola o promieniu wynosi " + poleKola(4).toFixed(3) + "cm^2");
+
+
+
+
+
